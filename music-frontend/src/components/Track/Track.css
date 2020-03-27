@@ -1,0 +1,78 @@
+.track-table th {
+  font-size: 13px;
+  color: #777;
+}
+
+.track-row {
+  border: solid 2px;
+  border-color: transparent;
+}
+
+.track-row:hover {
+  border-color: #ffdb4d;
+}
+
+.Nav-link-track {
+  display: block;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+}
+
+.Nav-link-track:hover {
+  text-decoration: none;
+  color: #fc363b;
+}
+
+.track-overflow {
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.track-overflow-hover:hover {
+  text-decoration: none;
+  color: #fc363b;
+}
+
+.track-fav {
+  position: relative;
+}
+
+.track-fav button {
+  border: none;
+  margin-right: 5px;
+  opacity: 0.4;
+  font-size: 18px;
+  background-color: transparent;
+}
+
+.track-fav button:hover {
+  outline: none;
+  opacity: 1;
+  color: #fc363b;
+}
+
+.track-fav button:active {
+  outline: none;
+}
+
+.track-fav button:focus {
+  outline: none;
+}
+
+.track-tooltip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #f4f4f4;
+  background-color: #222;
+  border-color: hsla(0, 0%, 100%, 0.05) !important;
+  max-width: 250px;
+}
+
+.track-tooltip-text {
+  font-size: 12px;
+}

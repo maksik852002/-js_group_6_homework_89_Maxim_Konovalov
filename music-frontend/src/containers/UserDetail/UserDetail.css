@@ -1,0 +1,21 @@
+.active {
+  outline: none;
+  color: #222 !important; 
+  border-color: #f33 !important;
+}
+
+.Nav-link {
+ display: block;
+ padding: .5rem 1rem;
+ text-transform: uppercase;
+ font-size: 13px;
+ font-weight: 600;
+ border-bottom: 3px solid;
+ border-color: transparent;
+ color: #777;
+}
+
+.Nav-link:hover {
+  text-decoration: none;
+  color: #fc363b;
+}
