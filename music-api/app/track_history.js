@@ -8,7 +8,7 @@ const router = express.Router();
 router.get("/", auth, async (req, res) => {
   try {
     const album = await  Album.find().populate('artist');
-    const history = await TrackHistory.find({user: req.user._id}).populate('user', 'token').sort({datetime: -1}).limit(20).populate('track');
+    const history = await TrackHistory.find({user: req.user._id}).populate('user', 'token').populate('track').sort({datetime: -1}).limit(20);
     for(alb of album) {
       for(hist of history) {
         if (hist.track.album.toString() === alb._id.toString()) {
@@ -18,6 +18,7 @@ router.get("/", auth, async (req, res) => {
      }
     res.send(history);
   } catch (e) {
+    console.log(e)
     res.status(422).send(e);
   }	
 });
